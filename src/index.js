@@ -2,7 +2,7 @@
 
 // define Base Url for API requests
 document.addEventListener("DOMContentLoaded", () => {
-  const BASE_URL = "http://localhost:3000";
+  const BASE_URL = "https://json-server-b6vw.onrender.com";
 
   // Function to fetch movie details and update the UI
   const fetchAndDisplayMovieDetails = async (filmsId) => {
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // function to delete movie from server
 function handleDelete(movie) {
-    fetch(` http://localhost:3000/films/${movie.id}`, {
+    fetch(`https://json-server-b6vw.onrender.com/films/${movie.id}`, {
         method: "DELETE"
     })
         .then(res => res.json)
